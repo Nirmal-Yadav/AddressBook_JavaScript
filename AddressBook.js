@@ -108,5 +108,12 @@ toString(){
    +", city = " +this.city + ", state = " +this.state+", zip = " +this.zip + ", phoneNumber = " +this.phoneNumber + ", email = " +this.email;
 }
 }
-let addressBookSystem1 = new AddressBookSystem('Nirmal',"Yadav","Malad","mumbai","maharashtra","400095","9167143355", "yadavnirmal07@gamil.com");
+let contactArray=new Array();
+let addressBookSystem1 = new AddressBookSystem('Nirmal',"Yadav","Malad","mumbai","maharashtra",400095,9167143355, "yadavnirmal07@gamil.com");
+contactArray.push(addressBookSystem1)
 console.log(addressBookSystem1.toString())
+let addressBookSystem2 = new AddressBookSystem('Rahul','Singh',"commandRoad","Lucknow","UP",410401,8977665543,"rahulsingh@gamil.com");
+contactArray.push(addressBookSystem2);
+let addressBookSystem3 = new AddressBookSystem("Peeti","Saw","pemula","Chennai","TamilNadu",564738,9566773333,"saw@gamil.com");
+contactArray.push(addressBookSystem3);
+console.log(contactArray)
