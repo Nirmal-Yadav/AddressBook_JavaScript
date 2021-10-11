@@ -118,12 +118,19 @@ let addressBookSystem3 = new AddressBookSystem("Peeti","Saw","pemula","Chennai",
 contactArray.push(addressBookSystem3);
 console.log(contactArray)
 updateName()
-
+deleteName()
 function updateName(){
-    let name = contactArray.filter(name => name.firstName == 'Nirmal');
-    if(name=='Nirmal')
-    name[0].firstName='Rajiv'
+    let name = contactArray.filter(e => e.firstName == 'Nirmal');
+    if(name.firstName =='Nirmal')
+    name.firstName='Rajiv'
     else{
         console.log("name not found")
     }
+}
+function deleteName(){
+    let name = contactArray.filter(e => e.firstName=="Nirmal");
+    if(name.firstName == "Nirmal")
+    name ='';
+    else
+    console.log("name not found");
 }
