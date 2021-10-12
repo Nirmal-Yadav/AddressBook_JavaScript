@@ -134,3 +134,7 @@ function deleteName(){
     else
     console.log("name not found");
 }
+function countContacts(){
+    let count = contactArray.length
+    console.log("Number of contacts :"+count);
+}
