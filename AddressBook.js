@@ -138,3 +138,11 @@ function countContacts(){
     let count = contactArray.length
     console.log("Number of contacts :"+count);
 }
+
+const addressBookSystem4 = new AddressBookSystem("Nirmal", "tiwari", "bhilaae", "raipur","CG", 445566,  908675433, "nirmal@gmail.com");
+if (contactArray.some(e => e.firstname == "Nirmal") != "Nirmal")
+    contactArray.push(addressBookSystem4);
+else
+    console.log("Value already Exists!");
+
+console.log("Unique Array: " + contactArray)
